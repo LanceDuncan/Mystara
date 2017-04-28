@@ -1,0 +1,451 @@
+var adventure = {
+ "type" : "FeatureCollection",
+ "features" : [
+   {
+     "type" : "Feature",
+     "id" : 0,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.76782,
+         27.1442
+       ]
+     },
+     "properties" : {
+       "FID" : 0,
+       "Id" : 0,
+       "Name" : "Koriszegy Keep",
+       "Type" : "Ruins",
+       "Monsters" : " Humanoids, Werewolves, Undead, Lowlife",
+       "Boss" : " Rodemus Family",
+       "Module" : "Modlvay Basic"
+     }
+   }
+ ]
+};
+
+var settlements = {
+ "type" : "FeatureCollection",
+ "features" : [
+   {
+     "type" : "Feature",
+     "id" : 0,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.4222002,26.6282997
+       ]
+     },
+     "properties" : {
+       "FID" : 0,
+       "Id" : 0,
+       "Population" : 5000,
+       "Ruler" : "Duke Stefan Karameikos III",
+       "Type" : "Capitol",
+       "Faction" : "Grand Duchy",
+       "Economy" : " Trade, Shipbuilding",
+       "Military" : 500,
+       "Name" : " Specularum"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 1,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.2908802,26.6830006
+       ]
+     },
+     "properties" : {
+       "FID" : 1,
+       "Id" : 0,
+       "Population" : 90,
+       "Ruler" : "Lady Magda Marilenev",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Farming",
+       "Military" : 0,
+       "Name" : " The Estate of Marilenev"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 2,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.6408300,26.9036999
+       ]
+     },
+     "properties" : {
+       "FID" : 2,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Lair",
+       "Faction" : "Humanoids",
+       "Economy" : " ",
+       "Military" : 0,
+       "Name" : " Bugbear Lair"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 3,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.3152101,26.9883995
+       ]
+     },
+     "properties" : {
+       "FID" : 3,
+       "Id" : 0,
+       "Population" : 1000,
+       "Ruler" : "Baron Ludwig 'Black Eagle' Von Hendricks",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Fishing",
+       "Military" : 200,
+       "Name" : " Fort Doom"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 4,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.5695200,27.1714993
+       ]
+     },
+     "properties" : {
+       "FID" : 4,
+       "Id" : 0,
+       "Population" : 500,
+       "Ruler" : " Mistress Sascia",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Trade, Farming",
+       "Military" : 0,
+       "Name" : " Luln"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 5,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.6153102,26.7796001
+       ]
+     },
+     "properties" : {
+       "FID" : 5,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 0,
+       "Name" : " Krakatos"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 6,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.8577485,27.2417679
+       ]
+     },
+     "properties" : {
+       "FID" : 6,
+       "Id" : 0,
+       "Population" : 2000,
+       "Ruler" : "Baron Desmond Kelven",
+       "Type" : "Town",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Trade, Fishing",
+       "Military" : 80,
+       "Name" : " Kelven"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 7,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.4964800,27.6341000
+       ]
+     },
+     "properties" : {
+       "FID" : 7,
+       "Id" : 0,
+       "Population" : 550,
+       "Ruler" : "Patriarch Sherlane",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Lumber, Trade",
+       "Military" : 0,
+       "Name" : " Threshold"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 8,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.7400999,27.4897995
+       ]
+     },
+     "properties" : {
+       "FID" : 8,
+       "Id" : 0,
+       "Population" : 250,
+       "Ruler" : "Council of Elders",
+       "Type" : "Lair",
+       "Faction" : "Gnomes",
+       "Economy" : "Crafts",
+       "Military" : 150,
+       "Name" : " High Forge"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 9,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         5.1429491,26.2585449
+       ]
+     },
+     "properties" : {
+       "FID" : 9,
+       "Id" : 0,
+       "Population" : 650,
+       "Ruler" : "Lord Lev Dromilov",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Fishing",
+       "Military" : 0,
+       "Name" : " Dmitrov"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 10,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.6876736,26.2148399
+       ]
+     },
+     "properties" : {
+       "FID" : 10,
+       "Id" : 0,
+       "Population" : 750,
+       "Ruler" : "Baron Philip Vorloi",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Trade",
+       "Military" : 0,
+       "Name" : " Vorloi"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 11,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.9661968,26.4539471
+       ]
+     },
+     "properties" : {
+       "FID" : 11,
+       "Id" : 0,
+       "Population" : 95,
+       "Ruler" : "Lord Zemiros Sulescu",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 0,
+       "Name" : " Sulescu"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 12,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         5.9507036,26.8642216
+       ]
+     },
+     "properties" : {
+       "FID" : 12,
+       "Id" : 0,
+       "Population" : 65,
+       "Ruler" : "Lord Vlad Lutescu",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Trade, Fishing",
+       "Military" : 0,
+       "Name" : " Rugalov"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 13,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         6.1296763,26.8676128
+       ]
+     },
+     "properties" : {
+       "FID" : 13,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 244,
+       "Name" : " Rugalov Keep"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 14,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         5.2141342,27.6498852
+       ]
+     },
+     "properties" : {
+       "FID" : 14,
+       "Id" : 0,
+       "Population" : 375,
+       "Ruler" : "Lady Arteris Penhaligon",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : "Trade",
+       "Military" : 0,
+       "Name" : " Penhaligon"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 15,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         4.4963412,27.5614243
+       ]
+     },
+     "properties" : {
+       "FID" : 15,
+       "Id" : 0,
+       "Population" : 50,
+       "Ruler" : " ",
+       "Type" : "Village",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 0,
+       "Name" : " Verge"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 16,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         5.3038583,28.0849304
+       ]
+     },
+     "properties" : {
+       "FID" : 16,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 244,
+       "Name" : " Duke's Road Keep"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 17,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         5.8458867,28.2467957
+       ]
+     },
+     "properties" : {
+       "FID" : 17,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 244,
+       "Name" : " Castellan Keep"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 18,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.2312911,27.5576324
+       ]
+     },
+     "properties" : {
+       "FID" : 18,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 244,
+       "Name" : " Riverfork Keep"
+     }
+   },
+   {
+     "type" : "Feature",
+     "id" : 19,
+     "geometry" : {
+       "type" : "Point",
+       "coordinates" : [
+         3.6889732,27.0441608
+       ]
+     },
+     "properties" : {
+       "FID" : 19,
+       "Id" : 0,
+       "Population" : 0,
+       "Ruler" : " ",
+       "Type" : "Castle",
+       "Faction" : "Grand Duchy",
+       "Economy" : " ",
+       "Military" : 244,
+       "Name" : " Radlebb Keep"
+     }
+   }
+ ]
+};

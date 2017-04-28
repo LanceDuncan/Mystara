@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Mystara</title>
+
+ <link href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" rel="stylesheet"></link>
+ <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+ <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #mapid {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="mapid"></div>
+
+<script src="points.js" type="text/javascript"></script>
+
+<script>
+
+ var mymap = L.map('mapid', {
+		center: [27, 4.5],
+		zoom: 9,
+		//layers: [base, elevation]
+	});
+
+ var base =
+  L.tileLayer('https://api.mapbox.com/styles/v1/wangalade/cj0g4tyeu00282rlhu67lc5su/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2FuZ2FsYWRlIiwiYSI6ImNqMGczMGExbDAyOWozM3F5cWFveG0weG4ifQ.5XnU5QheXYjjBhENpGtoXA', {
+  maxZoom: 13, minZoom: 3,
+  id: 'mapbox.base'
+ }).addTo(mymap);
+
+  elevation =
+  L.tileLayer('https://api.mapbox.com/styles/v1/wangalade/cj21e64kv002o2rqzk145bi1j/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2FuZ2FsYWRlIiwiYSI6ImNqMGczMGExbDAyOWozM3F5cWFveG0weG4ifQ.5XnU5QheXYjjBhENpGtoXA', {
+  maxZoom: 20, minZoom: 3,
+  id: 'mapbox.elevation'
+ }).addTo(mymap);
+
+ var baseMaps = { "base": base, "elevation": elevation };
+
+ L.control.layers(baseMaps, null).addTo(mymap);
+
+ L.geoJson( adventure, {
+  onEachFeature: function(feature, layer){
+        layer.bindPopup('<h3>' + feature.properties.Name + '</h3>' + '<h4> BBEV:' + feature.properties.Boss + '</h4>' + 'Monster Types:' + feature.properties.Monsters + '<br> Publication: ' + feature.properties.Module);
+    }
+} ).addTo(mymap);
+
+ L.geoJson( settlements, {
+  onEachFeature: function(feature, layer){
+       layer.bindPopup('<h3>' + feature.properties.Name + '</h3>' + '<h4> Ruler(Faction):' + feature.properties.Ruler + '(' + feature.properties.Faction +')' + '</h4>' + 'Population(army):'+ feature.properties.Population + '(' + feature.properties.Military +')' + '<br> Economic Base: ' + feature.properties.Economy);
+   }
+} ).addTo(mymap);
+
+</script>
+</body>
+</html>

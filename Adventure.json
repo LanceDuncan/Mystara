@@ -1,0 +1,25 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 0,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          3.76782,
+          27.1442
+        ]
+      },
+      "properties" : {
+        "FID" : 0,
+        "Id" : 0,
+        "Name" : "Koriszegy Keep",
+        "Type" : "Ruins",
+        "Monsters" : " Humanoids, Werewolves, Undead, Lowlife",
+        "Boss" : " Rodemus Family",
+        "Module" : "Modlvay Basic"
+      }
+    }
+  ]
+}
